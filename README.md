@@ -62,9 +62,14 @@ bash setup.sh
 - Persistent across sessions
 
 ### Agent System
+- **MetaAgent** - Dynamically generate custom agents using natural language (no coding required!)
 - Modular agent architecture
-- Easy to add custom agents
-- Built-in memory management agents
+- Easy to add custom agents manually or via MetaAgent
+- Built-in agents:
+  - **ContextMemory** - Recalls conversation history
+  - **ManageMemory** - Stores facts, preferences, and tasks
+  - **EmailDrafting** - Drafts professional emails
+  - **MetaAgent** - Generates new agents on demand
 
 ## 📋 Prerequisites
 
@@ -308,6 +313,23 @@ Edit these in Azure Portal → Function App → Configuration:
 - `CHARACTERISTIC_DESCRIPTION` - Your bot's personality
 
 ### Add Custom Agents
+
+#### Option 1: Use MetaAgent (Recommended - No Coding Required!)
+Simply tell your assistant what kind of agent you need:
+
+```
+"Create an agent that can fetch weather data for any city"
+```
+
+or
+
+```
+"I need an agent that analyzes sales data and calculates trends"
+```
+
+The MetaAgent will automatically generate and save the agent for you! See [MetaAgent Guide](docs/MetaAgent_Guide.md) for detailed examples and best practices.
+
+#### Option 2: Manual Agent Creation
 Create new file in `agents/` folder:
 ```python
 from agents.basic_agent import BasicAgent

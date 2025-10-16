@@ -127,15 +127,18 @@ class MetaAgent(BasicAgent):
         
         param_extraction_code = "\n".join(param_extractions) if param_extractions else "        pass"
         
+        # Clean up implementation logic for docstring - replace newlines and extra spaces
+        clean_logic = " ".join(implementation_logic.split())
+        
         # Generate implementation based on logic description
         implementation = f'''    def perform(self, **kwargs):
         """
-        Implementation logic: {implementation_logic}
+        Implementation logic: {clean_logic}
         """
 {param_extraction_code}
         
         try:
-            # TODO: Implement the actual logic based on: {implementation_logic}
+            # TODO: Implement the actual logic based on the description above
             # This is a generated template - customize the implementation as needed
             
             result = {{
