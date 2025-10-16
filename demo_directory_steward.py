@@ -6,7 +6,10 @@ Shows all capabilities of the autonomous directory steward
 
 import sys
 import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from pathlib import Path
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from agents.directory_steward_agent import DirectoryStewardAgent
 

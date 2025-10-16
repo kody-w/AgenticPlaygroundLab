@@ -338,8 +338,8 @@ Planned agent improvements:
 ## 📞 Support
 
 - **Documentation**: See individual agent README files
-- **Issues**: [GitHub Issues](https://github.com/kody-w/AgenticPlaygroundLab/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/kody-w/AgenticPlaygroundLab/discussions)
+- **Issues**: Submit issues via your repository's issue tracker
+- **Discussions**: Use your repository's discussion forum
 
 ---
 
