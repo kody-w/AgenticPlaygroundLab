@@ -30,10 +30,10 @@ Think of it as "GitHub Copilot for agents" - you specify requirements, and it ge
 
 **You say:**
 ```
-"I need an agent that sends SMS messages. It should take a phone number, message text, and optionally a sender ID"
+"I need an agent that sends SMS messages with a phone number, message text, and sender ID"
 ```
 
-**What MetaAgent generates:**
+**MetaAgent generates:**
 - Agent name: SMSMessenger
 - Parameters: phone_number (required), message (required), sender_id (optional)
 - Proper metadata for OpenAI function calling
@@ -46,11 +46,7 @@ Think of it as "GitHub Copilot for agents" - you specify requirements, and it ge
 
 **You say:**
 ```
-"Create an expense report agent that:
-- Takes an array of expenses with date, amount, and category
-- Calculates totals by category
-- Identifies expenses over $500
-- Generates a summary report"
+"Create an expense report agent that analyzes expenses and generates summaries"
 ```
 
 **MetaAgent provides:**
@@ -61,10 +57,23 @@ Think of it as "GitHub Copilot for agents" - you specify requirements, and it ge
 
 ---
 
-## Usage in Conversation
+## Tips for Best Results
 
-### Method 1: Direct Request (Recommended)
-Just ask naturally:
+1. **Be Specific**: The more details you provide, the better the generated agent
+2. **Describe Parameters**: Mention what inputs the agent needs
+3. **Explain Logic**: Describe what the agent should do with the inputs
+4. **Mention Dependencies**: If it needs specific libraries, say so
 
-```
-User: "Make me an agent that can convert currencies"
+## After Generation
+
+1. Agent is saved to Azure File Storage (multi_agents folder)
+2. Restart the function app to load the new agent
+3. Customize the generated code if needed
+4. Test the agent in conversation
+5. Share with your team
+
+## Learn More
+
+- [Full MetaAgent Guide](MetaAgent_Guide.md) - Comprehensive documentation
+- [Examples](examples/meta_agent_examples.py) - Practical code examples
+- [README](../README.md) - Project overview
