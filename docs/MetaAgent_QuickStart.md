@@ -30,7 +30,7 @@ Think of it as "GitHub Copilot for agents" - you specify requirements, and it ge
 
 **You say:**
 ```
-"I need an agent that sends SMS messages with a phone number, message text, and sender ID"
+"I need an agent that sends SMS messages. It should take a phone number and message text as required, and optionally accept a sender ID"
 ```
 
 **MetaAgent generates:**
@@ -46,7 +46,11 @@ Think of it as "GitHub Copilot for agents" - you specify requirements, and it ge
 
 **You say:**
 ```
-"Create an expense report agent that analyzes expenses and generates summaries"
+"Create an expense report agent that:
+- Takes an array of expenses with date, amount, and category
+- Calculates totals by category
+- Identifies expenses over $500
+- Generates a detailed summary report"
 ```
 
 **MetaAgent provides:**
