@@ -302,6 +302,44 @@ When integrating with Power Platform:
 
 ## 🛠️ Customization
 
+### Built-in Agents
+
+Your AI assistant comes with powerful built-in agents:
+
+#### 🏛️ Directory Steward Agent (NEW!)
+**Autonomous directory management and monitoring**
+
+The Directory Steward Agent provides comprehensive repository stewardship:
+- 📊 **Analyze Structure**: Visual directory trees with icons
+- 🔍 **Smart Search**: Find files by name or pattern
+- 📈 **Statistics**: File type distribution and size analysis
+- 🔎 **Content Search**: Find code references and patterns
+- 🏥 **Health Checks**: Repository health monitoring
+- 🔧 **Maintenance**: Actionable improvement suggestions
+
+**Example Usage**:
+```
+"Show me the directory structure"
+"Find all Python files"
+"Check repository health"
+"Give me codebase statistics"
+"Search for files containing 'agent'"
+```
+
+**Features**:
+- 8 powerful actions for directory management
+- Natural language interface
+- Beautiful formatted output with emojis
+- Intelligent file filtering
+- Performance-optimized with depth control
+
+📚 **Full Documentation**: See `agents/README_DIRECTORY_STEWARD.md` and `agents/USAGE_GUIDE.md`
+
+#### Other Built-in Agents
+- **Context Memory Agent**: Recalls conversation history
+- **Manage Memory Agent**: Stores facts and preferences
+- **Email Drafting Agent**: Drafts professional emails
+
 ### Change Your Bot's Personality
 Edit these in Azure Portal → Function App → Configuration:
 - `ASSISTANT_NAME` - Your bot's name
